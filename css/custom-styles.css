@@ -157,15 +157,10 @@
     background: transparent url(../icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -453px 0;
 }
 
-.nav2icons-01:focus:focus, 
-.nav2icons-02:focus:focus, 
-.nav2icons-03:focus:focus, 
-.nav2icons-04:focus:focus, 
-.nav2icons-05:focus:focus, 
-.nav2icons-06:focus:focus { /*activates the marker when focused*/
-    content: url(../icons/navigation-bar/nav2/marker.png);
+.marker {
+    position: absolute;
+    top: 5px;
 }
-
 
 /****************************DASHBOARD****************************/
 .dashboard { /*dashboard container*/
@@ -299,6 +294,7 @@ h1 { /*Tasks and Recommendations Header*/
     font-size: 16px;
     padding-left: 35px;
 }
+
 .badge {
     background-color: white;
     border: 1px solid #dddddd;
@@ -311,12 +307,14 @@ h1 { /*Tasks and Recommendations Header*/
 .icon-reachout {
     position: relative;
     float: right;
-    right: 29px;;
+    right: 29px;
+    top: 2px;
 }
 
 .tasks-icon-blue { /*icons for welcome, provide, and review*/
     position: relative;
     right: 6px;
+    top: 2px;
 }
 
 li:hover .tasks-text {
@@ -331,13 +329,22 @@ li:hover #count /*reach out icon*/{
     text-decoration: none;
 }
 
-li:hover .tasks-icon:before,
+li:hover .tasks-icon:before {
+    color: #cccccc;
+    content: url(../icons/tasks/tasks-icon.png);
+    position: absolute;
+    z-index: 9;
+    right: 29.5px;
+    top: 19.5px;
+}
+
 li:hover .tasks-icon-reachout:before {
     color: #cccccc;
     content: url(../icons/tasks/tasks-icon.png);
     position: absolute;
     z-index: 9;
-    right: 30px;
+    right: 29px;
+    top: 19.5px;
 }
 
 li:hover .tasks-number {
