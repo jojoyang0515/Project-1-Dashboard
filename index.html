@@ -1,117 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="CSS Project" />
-        <meta name="author" content="JoJo Yang" />
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <title>MEJO 487 CSS Project</title>
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/grid/">
-        <link href="styles.css" rel="stylesheet" />
-    </head>
     
-    <body>
-        <!--Navigation Bar-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-8 bg-secondary text-white">
-                    Navigation Bar
-                </div>
-                <div class="col-4 bg-danger text-white">
-                    MINI of Raleigh
-                </div>
-            </div>
-        </div>
-        
-        <!--Icons-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2 bg-secondary text-white">
-                </div>
-                <div class="col-8 bg-danger text-white">
-                    hi
-                </div>
-                <div class="col-2 bg-secondary text-white">
-                </div>
-            </div>
-        </div>
-        
-        <div class="container">
-        <!--Dashboard-->
-        <div class="container dashboard">
-             <div class="row dashboard2">
-                 <div class="col-8 bg-secondary text-white">
-                     dashboard
-                 </div>
-                 <div class="col-4 bg-danger text-white">
-                     <!--Search Box-->search box
-                 </div>
-            </div>
-        </div>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="" name="description">
+	<meta content="Mark Otto, Jacob Thornton, and Bootstrap contributors" name="author">
+	<meta content="Jekyll v4.1.1" name="generator">
+	<title>MEJO 487 Project 1</title>
+	<!--font from Adobe Fonts-->
+    <link href="https://use.typekit.net/mou8amk.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="custom-styles.css" rel="stylesheet"> </head>
 
-        <!--announcements (with borders between the columns)-->
-        <div class="container announcements">
-            <div class="row">
-                <div class="col-2 bg-warning text-dark"> 
-                    <!--announcments--><p>Announcements</p>
-                </div>
-                <div class="col-8 bg-success text-white"> 
-                    <!--dummy text--><p>Lorem ipsum dolor sit amet, consectetur</p>
-                </div>
-                <div class="col-2 bg-primary text-white"> 
-                    <!--the buttons--><p>previous,next</p>
-                </div>
+<body>
+	<!--NAVIGATION BAR-->
+		<div class="container-fluid nav1">
+			<div class="row">
+				<div class="col-md-6"> </div> <!--Blank-->
+				<div class="col-md-6">
+					<div class="row" id="nav1-content">
+						<div class="col-9">
+							<p class="nav1-text">MINI of Raleigh</p>
+						</div>
+						<div class="col-1 nav1-help-icon"> 
+                            <img src="icons/navigation-bar/nav1/help-icon.png" alt="navigation help icon"> 
+                        </div>
+						<div class="col-2 nav1-settings-icon"> 
+                            <img src="icons/navigation-bar/nav1/setting-icon.png" alt="navigation setting icon">
+                        </div>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div class="container-fluid nav2">
+			<div id="wrapper">
+				<div class="nav2-icongroups"> <!--use to split the nav icons equally on small screens-->
+					<a class="nav-item nav2icons-01" href="#"></a>
+					<a class="nav-item nav2icons-02" href="#"></a>
+					<a class="nav-item nav2icons-03" href="#"></a>
+				</div>
+				<div class="nav2-icongroups"> <!--use to split the nav icons equally on small screens-->
+					<a class="nav-item nav2icons-04" href="#"></a>
+					<a class="nav-item nav2icons-05" href="#"></a>
+					<a class="nav-item nav2icons-06" href="#"></a>
+				</div>
+			</div>
+		</div>
+	<!--END OF NAVIGATION BAR-->
+    
+	<!--DASHBOARD-->
+	<div class="container dashboard">
+		<div class="row">
+			<div class="col dashboard-heading"> 
+                Dashboard 
             </div>
-        </div>
-        
-        <!--body stuff-->
-        <div class="container body">
-            <div class="row">
-                <div class="col-4 bg-warning text-dark"> 
-                    <!--announcments--><p>taks and Recommendations</p>
+			<div class="col dashboard-search"> <!--the search forum-->
+				<form>
+					<input aria-label="Search" class="form-control form-control-sm mr-3" id="search-icon" type="text"> <i aria-hidden="true" class="fas fa-search"></i>
+				</form>
+			</div>
+		</div>
+	</div>
+    <!--END OF DASHBOARD-->
+    
+	<!--START OF BODY-->
+	<div class="container back-gradient"> <!--gives the background the gradient color-->
+        <div class="container-fluid body">
+            
+            <!--ANNOUNCEMENT-->
+			<div class="row">
+				<div class="col-lg-2 announcement-header"> 
+                    Announcements 
                 </div>
-                <div class="col-8 bg-success text-white"> 
-                    <!--dummy text--><p>Analytics</p>
+				<div class="col-lg-9 announcement-content"> 
+                    Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus 
                 </div>
-            </div>
-        </div>
-        
-        <!--bottom banner-->
-        <div class="container banner">
-            <div class="row">
-                <div class="col-4 bg-warning text-dark"> 
-                    <!--announcments--><p>Banner1</p>
+				<div class="col-lg-1 announcement-arrows"> 
+                    <img src="icons/announcements/announcements-prev.png" class="announcements-prev" alt="announcements-prev-arrow"> 
+                    <img src="icons/announcements/announcements-next.png" class="announcements-next" alt="announcements-next-arrow"> 
                 </div>
-                <div class="col-4 bg-success text-white"> 
-                    <!--dummy text--><p>Banner2</p>
+			</div>
+            
+		  <!--TASKS< RECOMMENDATIONS, AND ANALYTICS-->
+			<div class="row">
+                
+                <!--the left side (tasks and recommendations)-->
+				<div class="col-md-4 tasks-recommendations border">
+                    
+                    <!--tasks-->
+					<div class="row"> <!--the heading and icon-->
+						<div class="col-sm-12"> 
+							<h1>
+                                Tasks
+                                <img src="icons/tasks/tasks-setting.png" class="tasks-setting-icon" alt="tasks-setting-icon">
+                            </h1> 
+                        </div>
+					</div>
+                    
+                    <!--tasks contents-->
+                    <!--credit to https://getbootstrap.com/docs/4.0/components/list-group/-->
+					<ul class="list-group"> 
+						<li class="list-group-item d-flex">
+							<div class="tasks-number">1</div>
+							<div class="flex-fill tasks-text"
+                                 >Welcome Contacts
+                            </div>
+							<div class="badge tasks-icon">
+								<p class="count">32</p>
+							</div>
+						</li>
+						<li class="border-bottom"></li><!--bottom border-->
+						<li class="list-group-item d-flex">
+							<div class="tasks-number">2</div>
+							<div class="flex-fill tasks-text">
+                                Provide Responses
+                            </div>
+							<div class="badge tasks-icon">
+								<p class="count">36</p>
+							</div>
+						</li>
+						<li class="border-bottom"></li><!--bottom border-->
+						<li class="list-group-item d-flex">
+							<div class="tasks-number">3 </div>
+							<div class="flex-fill tasks-text">
+                                Review Activity
+                            </div>
+							<div class="badge tasks-icon">
+								<p class="count">36</p>
+							</div>
+						</li>
+						<li class="border-bottom"></li><!--bottom border-->
+						<li class="list-group-item d-flex">
+							<div class="tasks-number">4</div>
+							<div class="flex-fill tasks-text">
+                                Reach Out
+                            </div>
+							<div class="badge tasks-icon-reachout">
+								<p class="count">3</p>
+							</div>
+						</li>
+						<li class="border-bottom"></li><!--bottom border-->
+					</ul>
+                    
+					<!--RECOMMENDATIONS-->
+					<div class="row">
+						<div class="col-md-12">
+                                <h1>Recommendations</h1> 
+                        </div>
+                    </div>
+                    
+                    <!--recommendations content-->
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex recommendations-item">
+                            <div class="recommendations-icon"><!--icon-->
+                                <img src="icons/recommendations/article.png" alt="recommendation article icon">
+                            </div>
+                            <div class="row flex-fill recommendations"> <!--text-->
+                                <div class="recommendations-text"><!--text-->
+                                    <div class="row">
+                                        <div class="col-md-12 flex-fill">
+                                            <h4>Article</h4> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 flex-fill recommendations-title"> 7 Steps to getting more Fans 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dotted-border"></li><!--recommendations border-->
+                        <li class="list-group-item d-flex recommendations-item">
+                            <div class="recommendations-icon"><!--icon-->
+                                <img src="icons/recommendations/article.png" alt="recommendation article icon">
+                            </div>
+                            <div class="row flex-fill recommendations"><!--text-->
+                                <div class="recommendations-text"><!--text-->
+                                    <div class="row">
+                                        <div class="col-md-12 flex-fill">
+                                            <h4>Article</h4> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 flex-fill recommendations-title"> 
+                                            Increase traction with more <br>interactions 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dotted-border-article2"></li><!--recommendations border-->
+                        <li class="list-group-item d-flex recommendations-item">
+                            <div class="recommendations-icon">
+                                <img src="icons/recommendations/check.png" alt="recommendation check icon">
+                            </div>
+                            <div class="row flex-fill recommendations">
+                                <div class="recommendations-text">
+                                    <div class="row">
+                                        <div class="col-md-12 flex-fill">
+                                            <h4>Checklist</h4> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 flex-fill recommendations-title"> 
+                                            Creating a Promotion 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dotted-border"></li><!--recommendations border-->
+                        <li class="list-group-item d-flex recommendations-item">
+                            <div class="recommendations-icon">
+                                <img src="icons/recommendations/tip.png" alt="recommendation tip icon">
+                            </div>
+                            <div class="row flex-fill recommendations">
+                                <div class="recommendations-text">
+                                    <div class="row">
+                                        <div class="col-md-12 flex-fill">
+                                            <h4>Tip</h4> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 flex-fill recommendations-title"> 
+                                            Share More 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dotted-border-share-more"></li><!--recommendations border-->
+                    </ul>
                 </div>
-                <div class="col-4 bg-warning text-dark"> 
-                    <!--announcments--><p>Banner3</p>
-                </div>
-            </div>
-        </div>
-        </div>
-        
-        <!--Footer-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-3 bg-secondary text-white">
-                    Tutorial/Support/Blog
-                </div>
-                <div class="col-6 bg-danger text-white">
-                    Ariel Winter
-                </div>
-                <div class="col-1 bg-secondary text-white">
-                    Logout
-                </div>
-                <div class="col-1 bg-danger text-white">
-                    Social media
-                </div>
-                <div class="col-1 bg-secondary text-white">
-                    [Blank]
-                </div>
-            </div>
-        </div>
-    </body>
+                
+				<!--ANALYTICS-->
+				<div class="col-md-8 analytics border">
+					<h2>Analytics</h2>
+                    
+                    <!--bar graph-->
+					<div class="row">
+						<div class="col-md-9 analytics-graph">
+							<h3>Activity</h3>
+							<div class="selectmenu"><!--select menu credit to https://codepen.io/raubaca/pen/VejpQP-->
+								<label>
+									<select>
+										<option>
+                                            06/28/11 - 07/21/11 
+                                        </option>
+										<option>
+                                            05/27/11 - 06/28/11
+                                        </option>
+										<option>
+                                            06/28/11 - 07/21/11
+                                        </option>
+										<option>
+                                            06/28/11 - 07/21/11
+                                        </option>
+									</select>
+								</label>
+							</div> 
+                            <img class="bar-graph" src="images/analytics/bar-graph.png" alt="bar-graph"> 
+                        </div>
+                        
+                        <!--pie charts-->
+						<div class="col-md-3">
+                            <div class="pie-chart">
+                                <h3>Channels</h3>
+                                <img class="pie-chart-1" src="images/analytics/pie-chart.png" alt="channel pie chart">
+                            </div>
+                            <div class="pie-chart">
+                                <h3>Referrals</h3>
+                                <img class="pie-chart-2" src="images/analytics/pie-chart-2.png" alt="referrals pie chart">
+                            </div>
+                        </div>
+					</div>
+                    
+                    <!--social media key-->
+                    <div class="key">
+                        <!--credit to https://stackoverflow.com/a/27779075-->
+						<label>
+							<input type='checkbox'> <span class="checkbox"></span> 
+                        </label> 
+                        <span class="facebook">Facebook</span>
+						<label>
+							<input type='checkbox'> <span class="checkbox"></span> 
+                        </label> 
+                        <span class="twitter">Twitter</span>
+						<label>
+							<input type='checkbox'> <span class="checkbox"></span> 
+                        </label> 
+                        <span class="foursquare">Foursquare</span>
+						<label>
+							<input type='checkbox'> <span class="checkbox"></span> 
+                        </label> 
+                        <span class="googleplus">Google+</span> 
+                    </div>
+                    
+                    <!--CONTACTS AND CUSTOMERS-->
+					<div class="row contacts-and-customers">
+                        
+                        <!--contacts-->
+						<div class="col-md-6 contacts"> 
+							<img src="icons/contact-amd-customers/contacts-person.png" class="green-avatar" alt="contacts green avatar"> <!--avatar-->
+							<div class="row ribbon"> <!--ribbon-->
+                                <img src="icons/contact-amd-customers/left-ribbon.png" class="left-ribbon" alt="left end of the ribbon">
+								<div class="col">
+									<h5>75 Contacts</h5>
+									<p class="influencers-text">4 Influencers</p>
+								</div> 
+                                <img src="icons/contact-amd-customers/right-ribbon.png" class="right-ribbon" alt="right end of the ribbon"> 
+                            </div>
+							<div class="col contacts-customers-box"><!--the box behind contacts content-->
+								<div class="row"> 
+                                    <img src="images/contacts-and-customers/contacts-graph.png" class="graph" alt="green graph"> 
+                                </div>
+							</div>
+						</div>
+                        
+                        <!--customers-->
+						<div class="col-md-6 contacts">
+							<img src="icons/contact-amd-customers/customers-person.png" class="orange-avatar" alt="contacts green avatar"> <!--avatar-->
+							<div class="row ribbon"> 
+                                <img src="icons/contact-amd-customers/left-ribbon.png" class="left-ribbon" alt="left end of the ribbon">
+								<div class="col">
+									<h5>17 Customers</h5>
+									<p class="influencers-text">0 Influencers</p>
+								</div> 
+                                <img src="icons/contact-amd-customers/right-ribbon.png" class="right-ribbon" alt="right end of the ribbon"> </div>
+							<div class="col contacts-customers-box">
+								<div class="row"> 
+                                    <img src="images/contacts-and-customers/customers-graph.png" class="graph" alt="green graph"> 
+                                </div>
+							</div>
+						</div>
+					</div>
+                    
+                    <!--DID YOU KNOW-->
+					<div class="container">
+						<div class="row did-you-know">
+							<div class="col-1 back-arrow"> <!--back arrow-->
+								<div class="back-arrow-box"> 
+                                    <img src="icons/analytics/back-arrow.png" class="back-arrows" alt="carousel back arrows"> 
+                                </div>
+							</div>
+							<div class="col-10 carousel-text"> <!--did you know text-->
+								<p class="did-you-know-text"> <span class="did-you-know-header">Did you Know?</span>Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+							</div>
+							<div class="col-1 next-arrow">
+								<div class="next-arrow-box"> 
+                                    <img src="icons/analytics/next-arrow.png" class="next-arrows" alt="carousel next arrows"> 
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+             <!--END OF TASKS, RECOMMENDATIONS, ANALYTICS-->
+            
+            <!--promo-->
+			<div class=" row promo">
+                <!--Watch what you say promo-->
+				<div class="col-md-4"> 
+					<div class="watch-promo"> 
+                        <img src="images/promo/watch-promo.png" alt="watch promo image">
+						<p class="watch-promo-text"><span class="watch-promo-green-text">Watch what <br> you say. </span>
+							<br>Message Management</p>
+					</div>
+				</div>
+                <!--See what others promo-->
+				<div class="col-md-4">
+					<div class="see-promo">
+						<div class="see-promo-img">
+                            <img src="images/promo/see-what.png" class="see-what-image" alt="see what others are doing">
+							<p class="container see-promo-text">See what others are doing with us.</p>
+						</div>
+					</div>
+				</div>
+                <!--version 2-->
+				<div class="col-md-4">
+					<div class="version-promo"> 
+                        <img src="images/promo/version-2.png" class="version-2" alt="version-2-ad">
+						<p class="version-2-promo-text">Version 2.0
+							<br>is coming</p>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!--END OF PROMO-->
+	</div>
+    <!--END OF BODY-->
+    
+    <!--FOOTER-->
+	<footer class="footer mt-auto">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 tutorial"> <!--tutorials, support, blog-->
+					<div class="row">
+						<div class="col-md-4">
+							<p class="tutorials-text">Tutorials</p>
+						</div>
+						<div class="col-md-4">
+							<p class="support-text">Support</p>
+						</div>
+						<div class="col-md-4">
+							<p class="blog-text">Blog</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 footer-sweepstakes-text"> <!--Ariel Winter text-->
+					<div class="row">
+						<div class="col-10"> 
+                            <span class="footer-sweepstakes-hover-text">Ariel Winter </span>likes your <span class="footer-sweepstakes-hover-text">Win a Cooper Sweepstakes</span> Promotion 
+                        </div>
+						<div class="col-2"> 
+                            <img src="icons/footer/footer-arrow.png" class="footer-arrow" alt="footer up arrow"> 
+                        </div>
+					</div>
+				</div>
+				<div class="col"> <!--icon and logout-->
+                    <img src="icons/footer/footer-icon.png" class="footer-icon" alt="footer car icon">
+					<p class="footer-logout">Logout</p>
+				</div>
+				<div class="col social-media"><!--social media-->
+					<div class="row">
+						<a class="footer-socialmedia-fb" href="#"></a>
+						<a class="footer-socialmedia-tw" href="#"></a>
+						<a class="footer-socialmedia-fs" href="#"></a>
+						<a class="footer-socialmedia-yt" href="#"></a>
+					</div>
+				</div>
+				<div class="col-md-1"></div><!--blank-->
+			</div>
+		</div>
+	</footer>
+    <!--END OF FOOTER-->
+    
+    <!--Javascript-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script>
+	window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')
+	</script>
+	<script src="js/bootstrap.bundle.min.js">
+	</script>
+</body>
 </html>

@@ -1,0 +1,1036 @@
+/****************************BACKGROUND****************************/
+
+.back-gradient { /*gradient effect for the body*/
+    background-image: linear-gradient(#f6f6f6, #ffffff 35%, #ffffff 100%);
+    border-radius: 15px;
+    height: 100%;
+}
+
+.body { /*adds the padding before announcements*/
+    padding-top: 15px;
+}
+
+
+/****************************NAVIGATION****************************/
+
+.nav1 { /*mini of raleigh nav*/
+    /*background*/
+    background-image: linear-gradient(#2292eb, #1f8adf);
+    border-bottom: 2px solid #124169;
+    height: 50px;
+}
+
+.nav1-text {
+    /*"mini of raleigh"*/
+    color: #ffffff;
+    font-family: myriad-pro, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    padding-top: 13px;
+    text-align: right;
+}
+
+.nav1-help-icon {
+    border-image: linear-gradient(#1c85d8 80%, transparent 20%) 0.3 100%;
+    border-left: 2px solid;
+    margin-top: 10px;
+}
+
+.nav1-settings-icon {
+    margin-top: 10px;
+    border-image: linear-gradient(#1c85d8 80%, transparent 20%) 0.3 100%;
+    border-left: 2px solid;
+}
+
+#nav1-content {
+    position: relative; 
+    right: 85px;
+}
+
+/****************************navigation 2****************************/
+
+.nav2 { /*icon nav*/
+    /*background color and overlay background img */
+    background-color: #134670;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+#wrapper { /*keeps the icons in the center*/
+    background-image: url(images/menu/icons-texture.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+.nav2-icongroups { /*splits the icons into 2 groups so it will break in small screens*/
+    display: inline-block;
+}
+
+
+/*****nav2-icon active/hover/select effects credit to https://www.youtube.com/watch?v=zoLaoLGblzc*****/
+.nav2icons-01 { /*icon 1*/
+    background: transparent url(icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -545px 0;
+    display: inline-block;
+    height: 110px;
+    position: relative;
+    top: 6px;
+    width: 95px;
+}
+
+.nav2icons-01:hover,
+.nav2icons-01:focus {
+    background-position: 0 0;
+}
+
+.nav2icons-02 { /*icon 2*/
+    background: transparent url(icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -640px 0;
+    display: inline-block;
+    height: 110px;
+    position: relative;
+    top: 6px;
+    width: 88px;
+}
+
+.nav2icons-02:hover,
+.nav2icons-02:focus {
+    background-position: -95px 0;
+}
+
+.nav2icons-03 { /*icon 3*/
+    background: transparent url(icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -728px 0;
+    display: inline-block;
+    height: 110px;
+    position: relative;
+    top: 6px;
+    width: 92px;
+}
+
+.nav2icons-03:hover,
+.nav2icons-03:focus {
+    background-position: -183px 0;
+}
+
+.nav2icons-04 { /*icon 4*/
+    background: transparent url(icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -820px 0;
+    display: inline-block;
+    height: 110px;
+    position: relative;
+    top: 6px;
+    width: 91px;
+}
+
+.nav2icons-04:hover,
+.nav2icons-04:focus {
+    background-position: -275px 0;
+}
+
+.nav2icons-05 {
+    /*icon 5*/
+    background: transparent url(icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -911px 0;
+    display: inline-block;
+    height: 110px;
+    position: relative;
+    top: 6px;
+    width: 87px;
+}
+
+.nav2icons-05:hover,
+.nav2icons-05:focus {
+    background-position: -366px 0;
+}
+
+.nav2icons-06 {
+    /*icon 6*/
+    background: transparent url(icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -998px 0;
+    display: inline-block;
+    height: 110px;
+    position: relative;
+    top: 6px;
+    width: 92px;
+}
+
+.nav2icons-06:focus,
+.nav2icons-06:hover {
+    background: transparent url(icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -453px 0;
+}
+
+.nav2icons-01:focus:focus, .nav2icons-02:focus:focus, .nav2icons-03:focus:focus, .nav2icons-04:focus:focus, .nav2icons-05:focus:focus, .nav2icons-06:focus:focus { /*activates the marker when focused*/
+    content: url(icons/navigation-bar/nav2/marker.png);
+}
+
+
+/****************************DASHBOARD****************************/
+.dashboard { /*dashboard container*/
+    background-color: #33cc66;
+    border-radius: 7px;
+    height: 80px;
+    margin-bottom: 16px;
+}
+
+.dashboard-heading { /*"Dashboard"*/
+    color: #ffffff;
+    font-family: myriad-pro, sans-serif;
+    font-size: 36px;
+    letter-spacing: 1px;
+    padding-left: 40px;
+    padding-top: 11px;
+}
+
+.form-control { /*search box*/
+    border: 1px solid #2db55b;
+    border-radius: 3px;
+    height: 40px;
+    float: right;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+#search-icon { /*credit to https://stackoverflow.com/questions/7062383/putting-a-image-inside-a-input-box*/
+    background: white url(icons/dashboard/dashboard-search.png) no-repeat;
+    background-position: right 12px center;
+}
+
+/****************************ANNOUNCMENT****************************/
+.announcement-header { /*"announcement"*/
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    color: #fe7f13;
+    font-family: myriad-pro, sans-serif;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    min-height: 50px;
+}
+
+.announcement-content { /*dummy text*/
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    color: #777777;
+    font-family: myriad-pro, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.announcement-arrows { /*arrows*/
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin: auto 0;
+    padding: 0;
+    padding-top: 3px;
+    text-align: center;
+    min-height: 50px;
+}
+
+.announcements-prev:hover {
+    transform: scale(1.1);
+}
+
+.announcements-next:hover {
+    transform: scale(1.1);
+}
+
+/****************************TASKS****************************/
+.tasks-recommendations {/*background color*/
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+}
+
+.tasks-setting-icon {
+    float: right;
+    left: 10px;
+    margin-top: -5px;
+    position: relative;
+}
+
+h1 { /*Tasks and Recommendations Header*/
+    color: #2498f4;
+    font-size: 32px;
+    font-family: myriad-pro, sans-serif;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.tasks-number {
+    background-color: #32cc66;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: myriad-pro, sans-serif;
+    height: 30px;
+    margin-left: -13px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.tasks-text {
+    color: #3c9ff4;
+    font-size: 21px;
+    font-family: myriad-pro, sans-serif;
+    margin-left: 15px;
+}
+
+.count { 
+    color: #3c9ff4;
+    padding-top: 5px;
+    padding-right: 2px;
+    margin: auto 0;
+    float: right;
+    font-family: myriad-pro, sans-serif;
+    font-size: 16px;
+}
+
+.badge {
+    background-color: white;
+    border: 1px solid #dddddd;
+    height: 35px;
+    margin-right: -25px;
+    width: 60px;
+}
+
+.tasks-icon:before {
+    content: url(icons/tasks/tasks-icon-hover.png);
+    position: relative;
+    bottom: 2px;
+}
+
+.tasks-icon-reachout:before { /*aligns the reach out icon with the other three icons*/
+    content: url(icons/tasks/tasks-icon-hover.png);
+    position: relative;
+    bottom: 2px;
+    right: 4px;
+}
+
+
+li:hover .tasks-text {
+    /*credit to https://codepen.io/yying6/pen/FvGtz*/
+    color: #cccccc;
+    text-decoration: none;
+}
+
+li:hover .count {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+li:hover .tasks-icon:before,
+li:hover .tasks-icon-reachout:before {
+    color: #cccccc;
+    content: url(icons/tasks/tasks-icon.png);
+}
+
+li:hover .tasks-number {
+    background-color: #cccccc;
+}
+
+.list-group-item {
+    border: none;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-top: 15px;
+}
+
+.border-bottom {
+    list-style: none;
+    margin-left: -16px;
+    overflow: visible;
+    width: 112%;
+}
+
+/****************************RECOMMENDATIONS****************************/
+.analytics { /*background color*/
+    background-color: #ffffff;
+}
+
+h4 { /*the type of recommendation text*/
+    color: #999999;
+    display: block;
+    font-family: myriad-pro, sans-serif;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.recommendations-title {
+    color: #777777;
+    font-family: myriad-pro, sans-serif;
+    font-size: 16px;
+    margin-top: -13px;
+    margin-bottom: 8px;
+    line-height: 15px;
+}
+
+.recommendations-item {
+    height: 45px;
+    padding-bottom: 32px;
+}
+
+
+.recommendations-icon {
+    margin-left: -12px;
+}
+
+.recommendations-text {
+    padding-left: 32px;
+}
+
+li:hover .recommendations-title {
+    color: #000000;
+    font-weight: 600;
+}
+
+li:hover h4 {
+    color: #000000;
+    font-weight: 600;
+}
+
+.dotted-border {
+    background-image: linear-gradient(to right, #e5e5e5 20%, white 0%);
+    background-size: 5px 1px;
+    height: 2px;
+    list-style: none;
+    margin-top: 5px;
+    margin-left: -16px;
+    width: 112%;
+}
+
+.dotted-border-article2 {
+    background-image: linear-gradient(to right, #e5e5e5 20%, white 0%);
+    background-size: 5px 1px;
+    height: 2px;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: -16px;
+    width: 112%;
+}
+
+.dotted-border-share-more {
+    background-image: linear-gradient(to right, #e5e5e5 20%, white 0%);
+    background-size: 5px 1px;
+    height: 1px;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: -16px;
+    margin-bottom: 30px;
+    width: 112%;
+}
+
+/****************************ANALYTICS****************************/
+h2 { /*Analytics Header*/
+    color: #2498f4;
+    font-size: 32px;
+    font-family: myriad-pro, sans-serif;
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+h3 { /*activity, channel, etc*/
+    color: #999999;
+    display: block;
+    font-size: 13px;
+    font-family: myriad-pro, sans-serif;
+    padding-left: 20px;
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+
+/*credit to https://codepen.io/raubaca/pen/VejpQP*/
+
+.selectmenu select { /*the date range drop down menu*/
+    appearance: none;
+    background-image: none;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    color: #666666;
+    display: block;
+    float: right;
+    font-family: myriad-pro, sans-serif;
+    font-size: 13px;
+    height: 30px;
+    margin-top: -20px;
+    margin-right: 15px;
+    padding-left: 12px;
+    width: 160px;
+    -webkit-appearance: none;
+}
+
+.analytics-graph { /*divider between bar graph and pie charts*/
+    border-right: 1px solid #dcdcdc;
+    box-shadow: 2px 0px 0px 0px #ededed;
+}
+
+.bar-graph {
+    width: 100%;
+}
+
+.selectmenu { /*select drop down menu*/
+    -webkit-appearance: none;
+    float: right;
+    position: relative;
+}
+
+.selectmenu:after { /*customizes the select menu arrow*/
+    appearance: none;
+    content: url(icons/analytics/select-arrow.png);
+    border-left: 2px solid #f5f5f5;
+    bottom: 16px;
+    position: absolute;
+    right: 20px;
+}
+
+.channels-and-referrals {
+    border-left: 1px solid black;
+}
+
+.pie-chart {
+    display: inline-block;
+    min-width: 200px;
+    padding-left: 5px;
+}
+
+.pie-chart-1, .pie-chart-2 { /*scales the pie chart images*/
+    width: 140px;
+    height: auto;
+}
+
+/****************************KEY CHECKBOXES****************************/
+
+/*credit to https://stackoverflow.com/a/27779075*/
+label input {
+    display: none;
+}
+
+label {
+    margin-left: 10px;
+    -webkit-appearance: none;
+}
+
+.key { /*moves the checkbox row*/
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.checkbox {
+    background-image: linear-gradient(to bottom, #dadada, #e7e7e7);
+    /*inside color*/
+    background-size: 18px 18px;
+    border: 3px solid #ffffff;
+    /*inside border*/
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #e7e7e7;
+    display: inline-block;
+    height: 18px;
+    position: relative;
+    width: 18px;
+    top: 5px;
+}
+
+[type=checkbox]:checked+.checkbox:before { /*customized the checks*/
+    background-color: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #e7e7e7;
+    content: url(icons/analytics/orange-checkmark.png);
+    height: 18px;
+    left: -2px;
+    position: absolute;
+    top: -3px;
+    width: 18px;
+}
+
+.facebook { 
+    background-color: #114570;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: myriad-pro, sans-serif;
+    font-size: 12px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.twitter {
+    background-color: #2298f4;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: myriad-pro, sans-serif;
+    font-size: 12px;
+    margin-left: 2px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.foursquare {
+    background-color: #3a599b;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: myriad-pro, sans-serif;
+    font-size: 12px;
+    margin-left: 2px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.googleplus {
+    background-color: #31cc66;
+    border-radius: 5px;
+    color: #FFF;
+    font-family: myriad-pro, sans-serif;
+    font-size: 12px;
+    margin-left: 2px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+
+/******************CONTACTS AND CUSTOMERS******************/
+
+.contacts-and-customers {
+    /*the row*/
+    margin-top: 40px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 30px;
+    position: relative;
+    bottom: 70px;
+}
+
+.contacts { /*keeps everything centered*/
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.contacts-customers-box { /*the box*/
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    box-shadow: 0px 3px 4px 1px #d9d9d9;
+    min-height: 240px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 240px;
+}
+
+.green-avatar,
+.orange-avatar {
+    margin-bottom: -40px;
+    position: relative;
+    text-align: center;
+    top: 83px;
+    z-index: 1;
+}
+
+.ribbon {
+    background-color: #2394ee;
+    padding-bottom: 5px;
+    margin: auto;
+    outline: 1px solid #2394ee;
+    position: relative;
+    top: 120px;
+    width: 240px;
+    z-index: 1;
+}
+
+
+/*sides of ribbon*/
+
+.right-ribbon {
+    left: 15px;
+    position: relative;
+}
+
+.left-ribbon {
+    right: 15px;
+    position: relative;
+}
+
+h5 { /*contacts customers big words*/
+    color: #ffffff;
+    font-size: 20px;
+    font-family: myriad-pro, sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-top: 8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.influencers-text {
+    color: #ffffff;
+    font-size: 11px;
+    font-family: myriad-pro, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.graph { /*line graphs*/
+    /*line graph*/
+    margin: auto;
+    padding-top: 130px;
+    width: 220px;
+}
+
+/****************************DID YOU KNOW****************************/
+
+.did-you-know { /*the container*/
+    background: #2498f4;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 40px;
+    height: 150px;
+    outline: none;
+}
+
+.carousel-text { /*brings the text to the middle of the box*/
+    padding-top: 35px;
+}
+
+.did-you-know-header {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.did-you-know-text {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: myriad-pro, sans-serif;
+    line-height: 18px
+}
+
+.back-arrow-box { /*creates the semi-circle for the left arrow*/
+    background-color: #ffffff;
+    border-radius: 0 150px 150px 0;
+    height: 45px;
+    margin-top: 50px;
+    width: 25px;
+}
+
+.next-arrow-box { /*creates the semi-circle for the right arrow*/
+    background-color: #ffffff;
+    border-radius: 150px 0 0 150px;
+    float: right;
+    height: 45px;
+    margin-top: 50px;
+    width: 25px;
+}
+
+.back-arrow,
+.next-arrow {
+    /*positions the semi-circle buttons*/
+    background-color: #2498f4;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    width: 50px;
+}
+
+.back-arrows {
+    margin-left: 4px;
+    padding-top: 13px;
+}
+
+.next-arrows {
+    margin-left: 14px;
+    padding-top: 13px;
+}
+
+.back-arrows:hover {
+    padding-top: 13px;
+    margin-left: 0;
+}
+
+.next-arrows:hover {
+    padding-top: 13px;
+    position: relative;
+    left: 5px;
+}
+
+
+/****************************PROMO****************************/
+
+.promo { /*the blue box surrounding the promos*/
+    background-color: #2498f4;
+    margin-bottom: 30px;
+    min-height: 230px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.promo-boxes { /*keeps the boxes spaced out equally*/
+    margin: auto 0;
+}
+
+.watch-promo { /*the leftmost promo box*/
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 160px;
+    margin-left: 8px;
+    margin-top: 30px;
+    max-width: 320px;
+    position: relative;
+    box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.20);
+}
+
+.watch-promo-text {
+    text-align: right;
+    margin-right: 15px;
+    top: 40px;
+    right: 0;
+    position: absolute;
+    color: #666666;
+    font-size: 14px;
+    font-family: myriad-pro, sans-serif;
+}
+
+.watch-promo-green-text { /*"watch what you say" text*/
+    color: #33cc66;
+    font-size: 20px;
+    font-family: myriad-pro, sans-serif;
+    line-height: 1px;
+}
+
+.see-promo { /*the middle promo box*/
+    background-color: white;
+    height: 160px;
+    margin-top: 32px;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    max-width: 320px;
+    box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.20);
+}
+
+.see-promo-img { /* the box surrounding the middle image (get the head extend out of the box*/
+    position: relative;
+}
+
+.see-what-image { /*the image itself*/
+    position: absolute;
+    top: -14px;
+    left: 32px;
+    overflow: hidden;
+}
+
+.see-promo-text {
+    background-color: #33cc66;
+    position: relative;
+    top: 50px;
+    font-size: 16px;
+    font-family: myriad-pro, sans-serif;
+    color: white;
+    width: 95%;
+    height: 35px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.version-promo {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    max-width: 320px;
+    margin-bottom: 30px;
+    height: 160px;
+    box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.20);
+}
+
+.version-2 { /*the right most promo*/
+    float: right;
+}
+
+.version-2-promo-text {
+    text-align: left;
+    margin-right: 15px;
+    left: 10px;
+    top: 50px;
+    position: relative;
+    color: #fe7f13;
+    font-size: 20px;
+    font-family: myriad-pro, sans-serif;
+    line-height: 20px;
+    left: 20px;
+}
+
+/*hover effect credit to https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+.see-promo:hover {
+    transform: scale(1.1);
+}
+
+.watch-promo:hover {
+    transform: scale(1.1);
+}
+
+.version-promo:hover {
+    transform: scale(1.1);
+}
+
+/****************************FOOTER****************************/
+
+footer { /*background*/
+    height: 100%;
+    background-color: #efefef;
+    border-top: 2px solid #ffffff;
+    position: relative;
+    top: 40px;
+    bottom: -32px;
+    box-shadow: 0px -3px 5px 0px rgba(237,237,237,0.80);
+}
+
+.tutorials-support-blog {
+    border-right: 1px solid #dddddd;
+    margin-left: 20px;
+    margin-right: 32px;
+}
+
+.tutorials-text,
+.support-text,
+.blog-text {
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    color: #999999;
+    padding-top: 15px;
+}
+
+.tutorials-text:hover,
+.support-text:hover,
+.blog-text:hover {
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    color: #2498f2;
+}
+
+.support-text:after, 
+.blog-text:before /*dividers between tutorials, support, and blog*/{
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    right: 55px;
+    width: 1px;
+    height: 20px;
+    background-color: #dddddd;
+}
+
+.footer-sweepstakes-text {
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    color: #999999;
+    padding-top: 15px;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+}
+
+.footer-arrow {
+    padding-left: 30px;
+}
+
+.footer-arrow:hover {
+    padding-bottom: 30px;
+}
+
+.footer-sweepstakes-hover-text { /*blue text*/
+    color: #2498f2;
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-sweepstakes-hover-text:hover {
+    color: #000000;
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-icon {
+    float: left;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.footer-logout {
+    color: #2498f2;
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 60px;
+    font-weight: 700;
+}
+
+.footer-logout:hover {
+    color: #000000;
+    font-family: proxima-nova, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.social-media {
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.footer-socialmedia-fb {
+    background: transparent url(icons/footer/footer-socialmedia-spritesheet.png) no-repeat -100px -4px;
+    height: 16px;
+    margin-right: 4px;
+    margin-left: 20px;
+    width: 16px;
+}
+
+.footer-socialmedia-tw {
+    background: transparent url(icons/footer/footer-socialmedia-spritesheet.png) no-repeat -124px -4px;
+    height: 16px;
+    margin-right: 4px;
+    width: 16px;
+}
+
+.footer-socialmedia-fs {
+    background: transparent url(icons/footer/footer-socialmedia-spritesheet.png) no-repeat -148px -4px;
+    height: 16px;
+    margin-right: 4px;
+    width: 16px;
+}
+
+.footer-socialmedia-yt {
+    background: transparent url(icons/footer/footer-socialmedia-spritesheet.png) no-repeat -172px -4px;
+    height: 16px;
+    margin-right: 4px;
+    width: 16px;
+}
+
+/*****hover effect credit to https://www.youtube.com/watch?v=zoLaoLGblzc*****/
+.footer-socialmedia-fb:hover {
+    background-position: -4px -4px;
+    margin-right: 4px;
+}
+
+.footer-socialmedia-tw:hover {
+    background-position: -28px -4px;
+    margin-right: 4px;
+}
+
+.footer-socialmedia-fs:hover {
+    background-position: -52px -4px;
+    margin-right: 4px;
+}
+
+.footer-socialmedia-yt:hover {
+    background-position: -76px -4px;
+    margin-right: 4px;
+}
