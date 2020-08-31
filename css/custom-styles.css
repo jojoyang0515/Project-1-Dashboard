@@ -279,7 +279,7 @@ h1 { /*Tasks and Recommendations Header*/
     margin-left: 15px;
 }
 
-.count { 
+.count { /*Welcome, provide, and review*/
     color: #3c9ff4;
     padding-top: 5px;
     padding-right: 2px;
@@ -287,8 +287,18 @@ h1 { /*Tasks and Recommendations Header*/
     float: right;
     font-family: myriad-pro, sans-serif;
     font-size: 16px;
+    text-align: right;
 }
 
+#count { /*Reach out*/
+    color: #3c9ff4;
+    padding-top: 5px;
+    padding-right: 2px;
+    margin: auto 0;
+    font-family: myriad-pro, sans-serif;
+    font-size: 16px;
+    padding-left: 35px;
+}
 .badge {
     background-color: white;
     border: 1px solid #dddddd;
@@ -297,20 +307,17 @@ h1 { /*Tasks and Recommendations Header*/
     width: 60px;
 }
 
-.tasks-icon:before {
-    content: url(../icons/tasks/tasks-icon-hover.png);
-    content: url;
+
+.icon-reachout {
     position: relative;
-    bottom: 2px;
+    float: right;
+    right: 29px;;
 }
 
-.tasks-icon-reachout:before { /*aligns the reach out icon with the other three icons*/
-    content: url(../icons/tasks/tasks-icon-hover.png);
+.tasks-icon-blue { /*icons for welcome, provide, and review*/
     position: relative;
-    bottom: 2px;
-    right: 4px;
+    right: 6px;
 }
-
 
 li:hover .tasks-text {
     /*credit to https://codepen.io/yying6/pen/FvGtz*/
@@ -318,7 +325,8 @@ li:hover .tasks-text {
     text-decoration: none;
 }
 
-li:hover .count {
+li:hover .count /*welcome, provide, and review icon*/, 
+li:hover #count /*reach out icon*/{
     color: #cccccc;
     text-decoration: none;
 }
@@ -327,6 +335,9 @@ li:hover .tasks-icon:before,
 li:hover .tasks-icon-reachout:before {
     color: #cccccc;
     content: url(../icons/tasks/tasks-icon.png);
+    position: absolute;
+    z-index: 9;
+    right: 30px;
 }
 
 li:hover .tasks-number {
