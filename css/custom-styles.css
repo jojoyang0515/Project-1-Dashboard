@@ -57,104 +57,108 @@
     width: 100%;
 }
 
-#wrapper { /*keeps the icons in the center*/
+#icons { /*keeps the icons in the center*/
     background-image: url(../images/menu/icons-texture.png);
     background-repeat: no-repeat;
     margin: auto;
     position: relative;
     text-align: center;
+	overflow: hidden;
 }
 
 .nav2-icongroups { /*splits the icons into 2 groups so it will break in small screens*/
     display: inline-block;
+	overflow: hidden;
+	position: static;
 }
 
 
 /*****nav2-icon active/hover/select effects credit to https://www.youtube.com/watch?v=zoLaoLGblzc*****/
 .nav2icons-01 { /*icon 1*/
-    background: transparent url(../icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -545px 0;
+    background: transparent url(../icons/navigation-bar/individual/icons_01.png) no-repeat;
     display: inline-block;
     height: 110px;
-    position: relative;
+    position: static;
+	overflow: hidden;
     top: 6px;
     width: 95px;
 }
 
 .nav2icons-01:hover,
 .nav2icons-01:focus {
-    background-position: 0 0;
+    background: transparent url(../icons/navigation-bar/individual/hover-icons_01.png) no-repeat;
 }
 
 .nav2icons-02 { /*icon 2*/
-    background: transparent url(../icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -640px 0;
+    background: transparent url(../icons/navigation-bar/individual/icons_02.png) no-repeat;
     display: inline-block;
     height: 110px;
-    position: relative;
     top: 6px;
     width: 88px;
+	overflow: hidden;
 }
 
 .nav2icons-02:hover,
 .nav2icons-02:focus {
-    background-position: -95px 0;
+    background: transparent url(../icons/navigation-bar/individual/hover-icons_02.png) no-repeat;
 }
 
 .nav2icons-03 { /*icon 3*/
-    background: transparent url(../icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -728px 0;
+    background: transparent url(../icons/navigation-bar/individual/icons_03.png) no-repeat;
     display: inline-block;
     height: 110px;
-    position: relative;
+    position: static;
     top: 6px;
     width: 92px;
 }
 
 .nav2icons-03:hover,
 .nav2icons-03:focus {
-    background-position: -183px 0;
+    background: transparent url(../icons/navigation-bar/individual/hover-icons_03.png) no-repeat;
 }
 
 .nav2icons-04 { /*icon 4*/
-    background: transparent url(../icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -820px 0;
+    background: transparent url(../icons/navigation-bar/individual/icons_04.png) no-repeat;
     display: inline-block;
     height: 110px;
-    position: relative;
+    position: static;
     top: 6px;
     width: 91px;
 }
 
 .nav2icons-04:hover,
 .nav2icons-04:focus {
-    background-position: -275px 0;
+    background: transparent url(../icons/navigation-bar/individual/hover-icons_04.png) no-repeat;
 }
 
 .nav2icons-05 {
     /*icon 5*/
-    background: transparent url(../icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -911px 0;
+    background: transparent url(../icons/navigation-bar/individual/icons_05.png) no-repeat;
     display: inline-block;
     height: 110px;
-    position: relative;
+    position: static;
     top: 6px;
     width: 87px;
 }
 
 .nav2icons-05:hover,
 .nav2icons-05:focus {
-    background-position: -366px 0;
+    background: transparent url(../icons/navigation-bar/individual/hover-icons_05.png) no-repeat;
 }
 
 .nav2icons-06 {
     /*icon 6*/
-    background: transparent url(../icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -998px 0;
+    background: transparent url(../icons/navigation-bar/individual/icons_06.png) no-repeat;
     display: inline-block;
     height: 110px;
-    position: relative;
+    position: static;
     top: 6px;
     width: 92px;
 }
 
 .nav2icons-06:focus,
 .nav2icons-06:hover {
-    background: transparent url(../icons/navigation-bar/nav2/icons-spritesheet.png) no-repeat -453px 0;
+    background: transparent url(../icons/navigation-bar/individual/hover-icons_06.png) no-repeat;
 }
 
 .marker {
